@@ -3,9 +3,10 @@
 (setq indent-tabs-mode nil)
 (setq inhibit-splash-screen t)
 
-;; Pymacs
-(add-to-list 'load-path "~/.emacs.d/Pymacs")
+;; Pymacs/Rope
+;; Install python-rope and python-ropemacs and pymacs via package manager
 (require 'pymacs)
+(pymacs-load "ropemacs" "rope-")
 
 ;; Magit
 (add-to-list 'load-path "~/.emacs.d/magit")
