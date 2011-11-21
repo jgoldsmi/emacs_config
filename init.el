@@ -4,6 +4,9 @@
 (setq inhibit-splash-screen t)
 (setq kill-whole-line t)
 
+
+;; Python Section
+
 ;; Pymacs/Rope
 ;; Install python-rope and python-ropemacs and pymacs via package manager
 (require 'pymacs)
@@ -25,6 +28,12 @@
 (add-to-list 'load-path "~/.emacs.d/flymake-cursor")
 (load-library "flymake-cursor")
 (add-hook 'find-file-hook 'flymake-find-file-hook)
+
+;; Additional libraries, install through apt
+(require 'python-mode)
+(require 'ipython)
+
+;; END Python Section
 
 ;; Magit
 (add-to-list 'load-path "~/.emacs.d/magit")
