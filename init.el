@@ -3,6 +3,10 @@
 (setq indent-tabs-mode nil)
 (setq inhibit-splash-screen t)
 
+;; Pymacs
+(add-to-list 'load-path "~/.emacs.d/Pymacs")
+(require 'pymacs)
+
 ;; Magit
 (add-to-list 'load-path "~/.emacs.d/magit")
 (require 'magit)
