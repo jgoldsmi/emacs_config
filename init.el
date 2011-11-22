@@ -9,6 +9,11 @@
 (display-time)
 (fset 'yes-or-no-p 'y-or-n-p)
 
+;; Remember place in files
+(setq save-place-file "~/.emacs.d/saveplace")
+(setq-default save-place t)
+(require 'saveplace)
+
 ;; Python Section
 
 ;; Pymacs/Rope
