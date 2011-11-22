@@ -50,6 +50,14 @@
 (add-to-list 'ac-dictionary-directories "~/.emacs.d/auto-complete/dict")
 (ac-config-default)
 
+
+;; Markdown mode
+(add-to-list 'load-path "~/.emacs.d/markdown-mode")
+(autoload 'markdown-mode "markdown-mode"
+  "Major mode for editing Markdown files" t)
+(setq auto-mode-alist
+      (cons '("\\.md" . markdown-mode) auto-mode-alist))
+
 ;; Evil
 (add-to-list 'load-path "~/.emacs.d/evil")
 (require 'evil)

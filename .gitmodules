@@ -13,3 +13,6 @@
 [submodule "flymake-cursor"]
 	path = flymake-cursor
 	url = https://github.com/emacsmirror/flymake-cursor.git
+[submodule "markdown-mode"]
+	path = markdown-mode
+	url = git://jblevins.org/git/markdown-mode.git
