@@ -1,9 +1,13 @@
 ;; init.el
 (menu-bar-mode -1)
+(if (functionp 'tool-bar-mode) (tool-bar-mode 0))
 (setq indent-tabs-mode nil)
 (setq inhibit-splash-screen t)
 (setq kill-whole-line t)
-
+(column-number-mode 1)
+(setq display-time-day-and-date t)
+(display-time)
+(fset 'yes-or-no-p 'y-or-n-p)
 
 ;; Python Section
 
@@ -62,7 +66,6 @@
 (add-to-list 'load-path "~/.emacs.d/evil")
 (require 'evil)
 (evil-mode 1)
-
 
 ;;; This was installed by package-install.el.
 ;;; This provides support for the package system and
