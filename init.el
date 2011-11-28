@@ -30,6 +30,16 @@
 (setq uniquify-after-kill-buffer-p t) ; rename after killing uniquified
 (setq uniquify-ignore-buffers-re "^\\*") ; don't muck with special buffers
 
+;; Flyspell
+(defun turn-on-flyspell ()
+   "Force flyspell-mode on using a positive arg.  For use in hooks."
+   (interactive)
+   (flyspell-mode 1))
+(add-hook 'message-mode-hook 'turn-on-flyspell)
+(add-hook 'text-mode-hook 'turn-on-flyspell)
+(add-hook 'python-mode-hook 'flyspell-prog-mode)
+(add-hook 'c-mode-common-hook 'flyspell-prog-mode)
+
 ;; Python Section
 
 ;; Pymacs/Rope
