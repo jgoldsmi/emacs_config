@@ -108,6 +108,11 @@
 ;; This is your old M-x.
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
+;; rainbow delimiters
+(add-to-list 'load-path "~/.emacs.d/rainbow-delimiters")
+(require 'rainbow-delimiters)
+(global-rainbow-delimiters-mode)
+
 ;; Evil
 (add-to-list 'load-path "~/.emacs.d/evil")
 (require 'evil)
