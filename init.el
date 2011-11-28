@@ -1,12 +1,12 @@
 ;; init.el
 (menu-bar-mode -1)
-(if (functionp 'tool-bar-mode) (tool-bar-mode 0))
+(when (functionp 'tool-bar-mode) (tool-bar-mode 0))
 (setq indent-tabs-mode nil)
 (setq inhibit-splash-screen t)
 (setq kill-whole-line t)
 (column-number-mode 1)
 (ido-mode 1)
-(if window-system (global-linum-mode))
+(when window-system (global-linum-mode))
 (defalias 'yes-or-no-p 'y-or-n-p)
 (defalias 'list-buffers 'ibuffer)
 
@@ -108,7 +108,7 @@
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
 ;; color theme
-(if window-system
+(when window-system
     (progn
       (require 'color-theme)
       (color-theme-initialize)
