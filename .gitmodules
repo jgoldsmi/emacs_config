@@ -16,3 +16,6 @@
 [submodule "markdown-mode"]
 	path = markdown-mode
 	url = git://jblevins.org/git/markdown-mode.git
+[submodule "smex"]
+	path = smex
+	url = https://github.com/nonsequitur/smex.git
