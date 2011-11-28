@@ -7,8 +7,9 @@
 (column-number-mode 1)
 (setq display-time-day-and-date t)
 (display-time)
-(fset 'yes-or-no-p 'y-or-n-p)
 (ido-mode 1)
+(defalias 'yes-or-no-p 'y-or-n-p)
+(defalias 'list-buffers 'ibuffer)
 
 ;; Remember place in files
 (setq save-place-file "~/.emacs.d/saveplace")
