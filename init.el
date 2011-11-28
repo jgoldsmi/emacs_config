@@ -8,6 +8,7 @@
 (setq display-time-day-and-date t)
 (display-time)
 (fset 'yes-or-no-p 'y-or-n-p)
+(ido-mode 1)
 
 ;; Remember place in files
 (setq save-place-file "~/.emacs.d/saveplace")
