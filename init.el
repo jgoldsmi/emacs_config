@@ -108,6 +108,15 @@
 ;; This is your old M-x.
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
+;; color theme
+(if window-system
+    (progn
+      (require 'color-theme)
+      (color-theme-initialize)
+      (add-to-list 'load-path "~/.emacs.d/color-theme-wombat")
+      (require 'color-theme-wombat)
+      (color-theme-wombat)))
+
 ;; rainbow delimiters
 (add-to-list 'load-path "~/.emacs.d/rainbow-delimiters")
 (require 'rainbow-delimiters)

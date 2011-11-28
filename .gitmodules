@@ -22,3 +22,6 @@
 [submodule "rainbow-delimiters"]
 	path = rainbow-delimiters
 	url = https://github.com/jlr/rainbow-delimiters.git
+[submodule "color-theme-wombat"]
+	path = color-theme-wombat
+	url = https://github.com/demizer/color-theme-wombat.git
