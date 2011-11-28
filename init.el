@@ -5,9 +5,8 @@
 (setq inhibit-splash-screen t)
 (setq kill-whole-line t)
 (column-number-mode 1)
-(setq display-time-day-and-date t)
-(display-time)
 (ido-mode 1)
+(if window-system (global-linum-mode))
 (defalias 'yes-or-no-p 'y-or-n-p)
 (defalias 'list-buffers 'ibuffer)
 
