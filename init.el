@@ -71,6 +71,11 @@
 
 ;; END Python Section
 
+;; reST
+(add-to-list 'auto-mode-alist '("\\.rst$" . rst-mode))
+(add-to-list 'auto-mode-alist '("\\.rest$" . rst-mode))
+(add-to-list 'auto-mode-alist '("\\.txt$" . rst-mode))
+
 ;; Magit
 (add-to-list 'load-path "~/.emacs.d/magit")
 (require 'magit)
