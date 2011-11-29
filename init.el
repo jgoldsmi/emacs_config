@@ -6,6 +6,7 @@
 (setq kill-whole-line t)
 (column-number-mode 1)
 (ido-mode 1)
+(define-key global-map (kbd "RET") 'newline-and-indent)
 (when window-system (global-linum-mode))
 (defalias 'yes-or-no-p 'y-or-n-p)
 (defalias 'list-buffers 'ibuffer)
