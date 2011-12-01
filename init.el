@@ -4,6 +4,7 @@
 (setq indent-tabs-mode nil)
 (setq inhibit-splash-screen t)
 (setq kill-whole-line t)
+(setq require-final-newline 'query)
 (setq-default fill-column 80)
 (setq-default show-trailing-whitespace t)
 (column-number-mode 1)
