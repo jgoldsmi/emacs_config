@@ -4,6 +4,8 @@
 (setq indent-tabs-mode nil)
 (setq inhibit-splash-screen t)
 (setq kill-whole-line t)
+(setq-default fill-column 80)
+(setq-default show-trailing-whitespace t)
 (column-number-mode 1)
 (ido-mode 1)
 (define-key global-map (kbd "RET") 'newline-and-indent)
