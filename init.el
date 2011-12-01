@@ -20,7 +20,8 @@
 (require 'saveplace)
 
 ;; Backups
-(setq backup-directory-alist `(("." . "~/.emacs.d/saves")))
+(setq backup-directory-alist `(("." . "~/.emacs.d/backups")))
+(setq auto-save-file-name-transforms `((".*" "~/.emacs.d/autosaves/\\1" t)))
 (setq backup-by-copying t)
 (setq delete-old-versions t
   kept-new-versions 6
