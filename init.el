@@ -55,6 +55,7 @@
 (require 'pymacs)
 (pymacs-load "ropemacs" "rope-")
 (setq ropemacs-enable-autoimport t)
+(setq ropemacs-guess-project t)
 
 ;; Pyflakes checking
 (when (load "flymake" t)
