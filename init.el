@@ -72,6 +72,10 @@
 (load-library "flymake-cursor")
 (add-hook 'find-file-hook 'flymake-find-file-hook)
 
+;; virtualenv
+(add-to-list 'load-path "~/.emacs.d/virtualenv.el")
+(require 'virtualenv)
+
 ;; Additional libraries, install through apt
 (require 'python-mode)
 (require 'ipython)

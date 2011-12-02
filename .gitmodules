@@ -25,3 +25,6 @@
 [submodule "color-theme-wombat"]
 	path = color-theme-wombat
 	url = https://github.com/demizer/color-theme-wombat.git
+[submodule "virtualenv.el"]
+	path = virtualenv.el
+	url = https://github.com/aculich/virtualenv.el.git
