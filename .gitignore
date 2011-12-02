@@ -1,2 +1,4 @@
 ac-comphist.dat
 saveplace
+auto-save-list/*
+backups/*
