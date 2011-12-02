@@ -1,10 +1,13 @@
 ;; init.el
+
+;; Basic config
 (menu-bar-mode -1)
 (when (functionp 'tool-bar-mode) (tool-bar-mode 0))
 (setq indent-tabs-mode nil)
 (setq inhibit-splash-screen t)
 (setq kill-whole-line t)
 (setq require-final-newline 'query)
+(setq-default major-mode 'text-mode)
 (setq-default fill-column 80)
 (setq-default show-trailing-whitespace t)
 (column-number-mode 1)
