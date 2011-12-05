@@ -139,5 +139,9 @@
 (require 'evil)
 (evil-mode 1)
 
+(add-to-list 'load-path "~/.emacs.d/evil-surround")
+(require 'surround)
+(global-surround-mode 1)
+
 ;; emacs server
 (server-start)
