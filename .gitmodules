@@ -31,3 +31,6 @@
 [submodule "evil-surround"]
 	path = evil-surround
 	url = https://github.com/timcharper/evil-surround.git
+[submodule "mo-git-blame"]
+	path = mo-git-blame
+	url = https://github.com/mbunkus/mo-git-blame.git

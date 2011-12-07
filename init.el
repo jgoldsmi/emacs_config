@@ -99,9 +99,18 @@
 (add-to-list 'auto-mode-alist '("\\.rest$" . rst-mode))
 (add-to-list 'auto-mode-alist '("\\.txt$" . rst-mode))
 
+;; Git Section
 ;; Magit
 (add-to-list 'load-path "~/.emacs.d/magit")
 (require 'magit)
+(add-hook 'magit-log-mode-hook 'turn-on-auto-fill)
+
+;; mo-git-blame
+(add-to-list 'load-path "~/.emacs.d/mo-git-blame")
+(autoload 'mo-git-blame-file "mo-git-blame" nil t)
+(autoload 'mo-git-blame-current "mo-git-blame" nil t)
+
+;; END Git Section
 
 ;; undo-tree
 (add-to-list 'load-path "~/.emacs.d/undo-tree")
