@@ -34,3 +34,6 @@
 [submodule "mo-git-blame"]
 	path = mo-git-blame
 	url = https://github.com/mbunkus/mo-git-blame.git
+[submodule "full-ack"]
+	path = full-ack
+	url = https://github.com/nschum/full-ack.git

@@ -154,6 +154,14 @@
 (require 'rainbow-delimiters)
 (global-rainbow-delimiters-mode)
 
+;; Full Ack
+(add-to-list 'load-path "~/.emacs.d/full-ack")
+(setq ack-executable (executable-find "ack-grep"))
+(autoload 'ack-same "full-ack" nil t)
+(autoload 'ack "full-ack" nil t)
+(autoload 'ack-find-same-file "full-ack" nil t)
+(autoload 'ack-find-file "full-ack" nil t)
+
 ;; Evil
 (add-to-list 'load-path "~/.emacs.d/evil")
 (require 'evil)
