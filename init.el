@@ -163,17 +163,27 @@
 (autoload 'ack-find-file "full-ack" nil t)
 
 ;; Evil Section
+;; Evil
 (add-to-list 'load-path "~/.emacs.d/evil")
 (require 'evil)
 (evil-mode 1)
 
+;; Evil Surround
 (add-to-list 'load-path "~/.emacs.d/evil-surround")
 (require 'surround)
 (global-surround-mode 1)
 
+;; Evil numbers
+(add-to-list 'load-path "~/.emacs.d/evil-numbers")
+(require 'evil-numbers)
+(define-key evil-normal-state-map (kbd "C-c +") 'evil-numbers/inc-at-pt)
+(define-key evil-normal-state-map (kbd "C-c -") 'evil-numbers/dec-at-pt)
+
 ;; Keybindings
 (define-key evil-normal-state-map ",i" 'ibuffer)
 (define-key evil-normal-state-map ",b" 'ido-switch-buffer)
+(define-key evil-normal-state-map ",c" 'comment-dwim)
+(define-key evil-visual-state-map ",c" 'comment-dwim)
 (define-key evil-normal-state-map ",m" 'magit-status)
 (define-key evil-normal-state-map "ZZ" (kbd "C-c C-c"))
 

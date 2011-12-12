@@ -37,3 +37,6 @@
 [submodule "full-ack"]
 	path = full-ack
 	url = https://github.com/nschum/full-ack.git
+[submodule "evil-numbers"]
+	path = evil-numbers
+	url = https://github.com/cofi/evil-numbers.git
