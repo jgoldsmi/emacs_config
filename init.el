@@ -162,7 +162,7 @@
 (autoload 'ack-find-same-file "full-ack" nil t)
 (autoload 'ack-find-file "full-ack" nil t)
 
-;; Evil
+;; Evil Section
 (add-to-list 'load-path "~/.emacs.d/evil")
 (require 'evil)
 (evil-mode 1)
@@ -170,6 +170,14 @@
 (add-to-list 'load-path "~/.emacs.d/evil-surround")
 (require 'surround)
 (global-surround-mode 1)
+
+;; Keybindings
+(define-key evil-normal-state-map ",i" 'ibuffer)
+(define-key evil-normal-state-map ",b" 'ido-switch-buffer)
+(define-key evil-normal-state-map ",m" 'magit-status)
+(define-key evil-normal-state-map "ZZ" (kbd "C-c C-c"))
+
+;; END Evil Section
 
 ;; emacs server
 (server-start)
