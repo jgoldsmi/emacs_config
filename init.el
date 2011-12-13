@@ -189,7 +189,10 @@
 (define-key evil-normal-state-map ",c" 'comment-dwim)
 (define-key evil-visual-state-map ",c" 'comment-dwim)
 (define-key evil-normal-state-map ",m" 'magit-status)
+(define-key evil-normal-state-map ",r" 'recentf-ido-find-file)
+(define-key evil-normal-state-map ",x" 'smex)
 (define-key evil-normal-state-map "ZZ" (kbd "C-c C-c"))
+(define-key minibuffer-local-map (kbd "C-w") 'backward-kill-word)
 
 ;; END Evil Section
 
