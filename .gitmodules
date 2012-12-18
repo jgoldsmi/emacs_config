@@ -37,3 +37,6 @@
 [submodule "evil-numbers"]
 	path = evil-numbers
 	url = https://github.com/cofi/evil-numbers.git
+[submodule "auto-complete"]
+	path = auto-complete
+	url = https://github.com/auto-complete/auto-complete.git
