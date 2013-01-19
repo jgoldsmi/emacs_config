@@ -3,3 +3,4 @@
 
 (define-key evil-normal-state-map ",c" 'comment-dwim)
 (define-key evil-visual-state-map ",c" 'comment-dwim)
+(define-key evil-normal-state-map ",i" 'ibuffer)

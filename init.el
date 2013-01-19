@@ -57,12 +57,7 @@
 (add-to-list 'auto-mode-alist '("\\.txt$" . rst-mode))
 
 ;; Keybindings
-;; (define-key evil-normal-state-map ",i" 'ibuffer)
-;; (define-key evil-normal-state-map ",b" 'ido-switch-buffer)
-;; (define-key evil-normal-state-map ",r" 'recentf-ido-find-file)
-;; (define-key evil-normal-state-map ",x" 'smex)
-;; (define-key evil-normal-state-map "ZZ" (kbd "C-c C-c"))
-;; (define-key minibuffer-local-map (kbd "C-w") 'backward-kill-word)
+(setq jedi:setup-keys t)
 
 ;; el-get setup
 (setq my-packages
