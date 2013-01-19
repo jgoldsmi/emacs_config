@@ -65,6 +65,7 @@
 	     auto-complete
 	     jedi
 	     helm
+	     go-mode
 	     magit
 	     markdown-mode
 	     rainbow-delimiters
