@@ -11,7 +11,6 @@
 (setq-default fill-column 80)
 (setq-default show-trailing-whitespace t)
 (column-number-mode 1)
-(ido-mode 1)
 (define-key global-map (kbd "RET") 'newline-and-indent)
 (when window-system (global-linum-mode))
 (defalias 'yes-or-no-p 'y-or-n-p)
@@ -34,13 +33,6 @@
 ;; recentf
 (require 'recentf)
 (recentf-mode 1)
-(defun recentf-ido-find-file ()
-  "Find a recent file using Ido."
-  (interactive)
-  (let ((file (ido-completing-read "Choose recent file: " recentf-list nil t)))
-    (when file
-      (find-file file))))
-(global-set-key "\C-x\C-r" 'recentf-ido-find-file)
 
 ;; Uniquify
 (require 'uniquify)
@@ -77,6 +69,7 @@
 ;; el-get setup
 (setq my-packages
       '(evil evil-surround evil-leader evil-numbers
+	     helm
 	     magit
 	     rainbow-delimiters
 	     solarized-theme))
