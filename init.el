@@ -67,6 +67,7 @@
 ;; el-get setup
 (setq my-packages
       '(evil evil-surround evil-leader evil-numbers
+	     auto-complete
 	     helm
 	     magit
 	     rainbow-delimiters
