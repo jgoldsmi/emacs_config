@@ -69,7 +69,6 @@
 ;; (define-key evil-normal-state-map ",b" 'ido-switch-buffer)
 ;; (define-key evil-normal-state-map ",c" 'comment-dwim)
 ;; (define-key evil-visual-state-map ",c" 'comment-dwim)
-;; (define-key evil-normal-state-map ",m" 'magit-status)
 ;; (define-key evil-normal-state-map ",r" 'recentf-ido-find-file)
 ;; (define-key evil-normal-state-map ",x" 'smex)
 ;; (define-key evil-normal-state-map "ZZ" (kbd "C-c C-c"))
@@ -78,6 +77,7 @@
 ;; el-get setup
 (setq my-packages
       '(evil evil-surround evil-leader evil-numbers
+	     magit
 	     rainbow-delimiters))
 (setq el-get-user-package-directory "~/.emacs.d/el-get-init-files")
 (setq el-get-install-branch "master")
