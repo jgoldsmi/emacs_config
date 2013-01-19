@@ -63,138 +63,21 @@
 (add-hook 'python-mode-hook 'flyspell-prog-mode)
 (add-hook 'c-mode-common-hook 'flyspell-prog-mode)
 
-;; Python Section
-
-;; Pymacs/Rope
-;; Install python-rope and python-ropemacs and pymacs via package manager
-(require 'pymacs)
-(pymacs-load "ropemacs" "rope-")
-(setq ropemacs-enable-autoimport t)
-(setq ropemacs-guess-project t)
-
-;; Pyflakes checking
-(when (load "flymake" t)
-  (defun flymake-pyflakes-init ()
-    (let* ((temp-file (flymake-init-create-temp-buffer-copy
-                       'flymake-create-temp-inplace))
-           (local-file (file-relative-name
-                        temp-file
-                        (file-name-directory buffer-file-name))))
-      (list "pyflakes" (list local-file))))
-  (add-to-list 'flymake-allowed-file-name-masks
-               '("\\.py\\'" flymake-pyflakes-init)))
-
-(add-to-list 'load-path "~/.emacs.d/flymake-cursor")
-(load-library "flymake-cursor")
-(add-hook 'find-file-hook 'flymake-find-file-hook)
-
-;; virtualenv
-(add-to-list 'load-path "~/.emacs.d/virtualenv.el")
-(require 'virtualenv)
-
-;; Additional libraries, install through apt
-(require 'python-mode)
-(require 'ipython)
-
-;; END Python Section
-
 ;; reST
 (add-to-list 'auto-mode-alist '("\\.rst$" . rst-mode))
 (add-to-list 'auto-mode-alist '("\\.rest$" . rst-mode))
 (add-to-list 'auto-mode-alist '("\\.txt$" . rst-mode))
 
-;; Git Section
-;; Magit
-(add-to-list 'load-path "~/.emacs.d/magit")
-(require 'magit)
-(add-hook 'magit-log-mode-hook 'turn-on-auto-fill)
-
-;; mo-git-blame
-(add-to-list 'load-path "~/.emacs.d/mo-git-blame")
-(autoload 'mo-git-blame-file "mo-git-blame" nil t)
-(autoload 'mo-git-blame-current "mo-git-blame" nil t)
-
-;; END Git Section
-
-;; undo-tree
-(add-to-list 'load-path "~/.emacs.d/undo-tree")
-(require 'undo-tree)
-(global-undo-tree-mode)
-
-;; auto-complete
-(add-to-list 'load-path "~/.emacs.d/auto-complete")
-(require 'auto-complete-config)
-(add-to-list 'ac-dictionary-directories "~/.emacs.d/auto-complete/dict")
-(ac-config-default)
-
-
-;; Markdown mode
-(add-to-list 'load-path "~/.emacs.d/markdown-mode")
-(autoload 'markdown-mode "markdown-mode"
-  "Major mode for editing Markdown files" t)
-(setq auto-mode-alist
-      (cons '("\\.md" . markdown-mode) auto-mode-alist))
-
-;; smex
-(add-to-list 'load-path "~/.emacs.d/smex")
-(require 'smex)
-(smex-initialize)
-(global-set-key (kbd "M-x") 'smex)
-(global-set-key (kbd "M-X") 'smex-major-mode-commands)
-;; This is your old M-x.
-(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
-
-;; color theme
-(when window-system
-    (progn
-      (require 'color-theme)
-      (color-theme-initialize)
-      (add-to-list 'load-path "~/.emacs.d/color-theme-wombat")
-      (require 'color-theme-wombat)
-      (color-theme-wombat)))
-
-;; rainbow delimiters
-(add-to-list 'load-path "~/.emacs.d/rainbow-delimiters")
-(require 'rainbow-delimiters)
-(global-rainbow-delimiters-mode)
-
-;; Full Ack
-(add-to-list 'load-path "~/.emacs.d/full-ack")
-(setq ack-executable (executable-find "ack-grep"))
-(autoload 'ack-same "full-ack" nil t)
-(autoload 'ack "full-ack" nil t)
-(autoload 'ack-find-same-file "full-ack" nil t)
-(autoload 'ack-find-file "full-ack" nil t)
-
-;; Evil Section
-;; Evil
-(add-to-list 'load-path "~/.emacs.d/evil")
-(require 'evil)
-(evil-mode 1)
-
-;; Evil Surround
-(add-to-list 'load-path "~/.emacs.d/evil-surround")
-(require 'surround)
-(global-surround-mode 1)
-
-;; Evil numbers
-(add-to-list 'load-path "~/.emacs.d/evil-numbers")
-(require 'evil-numbers)
-(define-key evil-normal-state-map (kbd "C-c +") 'evil-numbers/inc-at-pt)
-(define-key evil-normal-state-map (kbd "C-c -") 'evil-numbers/dec-at-pt)
-
 ;; Keybindings
-(define-key evil-normal-state-map ",i" 'ibuffer)
-(define-key evil-normal-state-map ",b" 'ido-switch-buffer)
-(define-key evil-normal-state-map ",c" 'comment-dwim)
-(define-key evil-visual-state-map ",c" 'comment-dwim)
-(define-key evil-normal-state-map ",m" 'magit-status)
-(define-key evil-normal-state-map ",r" 'recentf-ido-find-file)
-(define-key evil-normal-state-map ",x" 'smex)
-(define-key evil-normal-state-map "ZZ" (kbd "C-c C-c"))
-(define-key minibuffer-local-map (kbd "C-w") 'backward-kill-word)
-
-;; END Evil Section
+;; (define-key evil-normal-state-map ",i" 'ibuffer)
+;; (define-key evil-normal-state-map ",b" 'ido-switch-buffer)
+;; (define-key evil-normal-state-map ",c" 'comment-dwim)
+;; (define-key evil-visual-state-map ",c" 'comment-dwim)
+;; (define-key evil-normal-state-map ",m" 'magit-status)
+;; (define-key evil-normal-state-map ",r" 'recentf-ido-find-file)
+;; (define-key evil-normal-state-map ",x" 'smex)
+;; (define-key evil-normal-state-map "ZZ" (kbd "C-c C-c"))
+;; (define-key minibuffer-local-map (kbd "C-w") 'backward-kill-word)
 
 ;; emacs server
 (server-start)
