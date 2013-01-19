@@ -76,8 +76,10 @@
 ;; (define-key minibuffer-local-map (kbd "C-w") 'backward-kill-word)
 
 ;; el-get setup
+(setq my-packages
+      '(evil evil-surround evil-leader evil-numbers
+	     rainbow-delimiters))
 (setq el-get-user-package-directory "~/.emacs.d/el-get-init-files")
-;; (setq el-get-install-branch "4.stable")
 (setq el-get-install-branch "master")
 (add-to-list 'load-path "~/.emacs.d/el-get/el-get")
 
@@ -88,7 +90,7 @@
     (goto-char (point-max))
     (eval-print-last-sexp)))
 
-(el-get 'sync)
+(el-get 'sync my-packages)
 
 
 
