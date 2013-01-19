@@ -59,8 +59,6 @@
 ;; Keybindings
 ;; (define-key evil-normal-state-map ",i" 'ibuffer)
 ;; (define-key evil-normal-state-map ",b" 'ido-switch-buffer)
-;; (define-key evil-normal-state-map ",c" 'comment-dwim)
-;; (define-key evil-visual-state-map ",c" 'comment-dwim)
 ;; (define-key evil-normal-state-map ",r" 'recentf-ido-find-file)
 ;; (define-key evil-normal-state-map ",x" 'smex)
 ;; (define-key evil-normal-state-map "ZZ" (kbd "C-c C-c"))
