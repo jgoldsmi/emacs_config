@@ -66,6 +66,7 @@
 	     jedi
 	     helm
 	     magit
+	     markdown-mode
 	     rainbow-delimiters
 	     solarized-theme
 	     diminish))
