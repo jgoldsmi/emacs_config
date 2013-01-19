@@ -68,6 +68,7 @@
 (setq my-packages
       '(evil evil-surround evil-leader evil-numbers
 	     auto-complete
+	     diminish
 	     helm
 	     magit
 	     rainbow-delimiters
