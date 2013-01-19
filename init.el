@@ -68,11 +68,11 @@
 (setq my-packages
       '(evil evil-surround evil-leader evil-numbers
 	     auto-complete
-	     diminish
 	     helm
 	     magit
 	     rainbow-delimiters
-	     solarized-theme))
+	     solarized-theme
+	     diminish))
 (setq el-get-user-package-directory "~/.emacs.d/el-get-init-files")
 (setq el-get-install-branch "master")
 (add-to-list 'load-path "~/.emacs.d/el-get/el-get")
