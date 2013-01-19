@@ -3,3 +3,4 @@ saveplace
 auto-save-list/*
 autosaves/*
 backups/*
+el-get/*
