@@ -78,7 +78,8 @@
 (setq my-packages
       '(evil evil-surround evil-leader evil-numbers
 	     magit
-	     rainbow-delimiters))
+	     rainbow-delimiters
+	     solarized-theme))
 (setq el-get-user-package-directory "~/.emacs.d/el-get-init-files")
 (setq el-get-install-branch "master")
 (add-to-list 'load-path "~/.emacs.d/el-get/el-get")
