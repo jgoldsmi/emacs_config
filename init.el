@@ -17,10 +17,6 @@
 (defalias 'yes-or-no-p 'y-or-n-p)
 (defalias 'list-buffers 'ibuffer)
 
-;; custom file
-(setq custom-file "~/.emacs.d/custom.el")
-(load custom-file)
-
 ;; Remember place in files
 (setq save-place-file "~/.emacs.d/saveplace")
 (setq-default save-place t)
