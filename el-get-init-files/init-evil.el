@@ -1,3 +1,4 @@
+(setq evil-default-cursor t)
 (require 'evil)
 (evil-mode 1)
 
