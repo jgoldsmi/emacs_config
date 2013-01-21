@@ -1,5 +1,5 @@
 ;; init.el
-
+(add-to-list 'load-path "~/.emacs.d")
 ;; Basic config
 (menu-bar-mode -1)
 (when (functionp 'tool-bar-mode) (tool-bar-mode 0))
@@ -83,8 +83,6 @@
     (eval-print-last-sexp)))
 
 (el-get 'sync my-packages)
-
-
 
 ;; emacs server
 (server-start)
