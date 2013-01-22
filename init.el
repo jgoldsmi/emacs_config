@@ -1,7 +1,8 @@
 ;; init.el
 (add-to-list 'load-path "~/.emacs.d")
 ;; Basic config
-(menu-bar-mode -1)
+(when (not (eq window-system 'ns))
+  (menu-bar-mode -1))
 (when (functionp 'tool-bar-mode) (tool-bar-mode 0))
 (setq indent-tabs-mode nil)
 (setq inhibit-splash-screen t)
