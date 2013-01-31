@@ -69,6 +69,7 @@
 	     go-mode
 	     magit
 	     markdown-mode
+	     org-mode
 	     rainbow-delimiters
 	     solarized-theme
 	     diminish))
