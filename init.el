@@ -74,20 +74,20 @@
       '((:name theme-changer
 	       :type github
 	       :pkgname "hadronzoo/theme-changer")))
+
 (setq my-packages
-      (append
-       '(evil evil-surround evil-leader evil-numbers
-	      auto-complete
-	      jedi
-	      helm
-	      go-mode
-	      magit
-	      markdown-mode
-	      org-mode
-	      rainbow-delimiters
-	      solarized-theme
-	      diminish)
-       (mapcar 'el-get-source-name el-get-sources)))
+      '(evil evil-surround evil-leader evil-numbers
+	     auto-complete
+	     jedi
+	     helm
+	     go-mode
+	     magit
+	     markdown-mode
+	     org-mode
+	     rainbow-delimiters
+	     theme-changer
+	     solarized-theme
+	     diminish))
 
 (el-get 'sync my-packages)
 
