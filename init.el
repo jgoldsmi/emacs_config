@@ -1,5 +1,4 @@
 ;; init.el
-(add-to-list 'load-path "~/.emacs.d")
 ;; Basic config
 (when (not (eq window-system 'ns))
   (menu-bar-mode -1))
@@ -61,28 +60,34 @@
 (setq jedi:setup-keys t)
 
 ;; el-get setup
-(setq my-packages
-      '(evil evil-surround evil-leader evil-numbers
-	     auto-complete
-	     jedi
-	     helm
-	     go-mode
-	     magit
-	     markdown-mode
-	     org-mode
-	     rainbow-delimiters
-	     solarized-theme
-	     diminish))
+(add-to-list 'load-path "~/.emacs.d/el-get/el-get")
 (setq el-get-user-package-directory "~/.emacs.d/el-get-init-files")
 (setq el-get-install-branch "master")
-(add-to-list 'load-path "~/.emacs.d/el-get/el-get")
-
 (unless (require 'el-get nil 'noerror)
   (with-current-buffer
       (url-retrieve-synchronously
        "https://raw.github.com/dimitri/el-get/master/el-get-install.el")
     (goto-char (point-max))
     (eval-print-last-sexp)))
+
+(setq el-get-sources
+      '((:name theme-changer
+	       :type github
+	       :pkgname "hadronzoo/theme-changer")))
+(setq my-packages
+      (append
+       '(evil evil-surround evil-leader evil-numbers
+	      auto-complete
+	      jedi
+	      helm
+	      go-mode
+	      magit
+	      markdown-mode
+	      org-mode
+	      rainbow-delimiters
+	      solarized-theme
+	      diminish)
+       (mapcar 'el-get-source-name el-get-sources)))
 
 (el-get 'sync my-packages)
 
