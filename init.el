@@ -15,6 +15,7 @@
 (when window-system (global-linum-mode))
 (defalias 'yes-or-no-p 'y-or-n-p)
 (defalias 'list-buffers 'ibuffer)
+(global-set-key (kbd "C-z") 'scroll-down-command)
 
 ;; Remember place in files
 (setq save-place-file "~/.emacs.d/saveplace")
@@ -59,6 +60,9 @@
 ;; Keybindings
 (setq jedi:setup-keys t)
 
+;; Use cperl-mode instead of perl-mode
+(defalias 'perl-mode 'cperl-mode)
+
 ;; el-get setup
 (add-to-list 'load-path "~/.emacs.d/el-get/el-get")
 (setq el-get-user-package-directory "~/.emacs.d/el-get-init-files")
@@ -76,18 +80,18 @@
 	       :pkgname "hadronzoo/theme-changer")))
 
 (setq my-packages
-      '(evil evil-surround evil-leader evil-numbers
-	     auto-complete
-	     jedi
-	     helm
-	     go-mode
-	     magit
-	     markdown-mode
-	     org-mode
-	     rainbow-delimiters
-	     theme-changer
-	     solarized-theme
-	     diminish))
+      '(auto-complete
+	jedi
+	helm
+	go-mode
+	puppet-mode
+	magit
+	markdown-mode
+	org-mode
+	rainbow-delimiters
+	theme-changer
+	solarized-theme
+	diminish))
 
 (el-get 'sync my-packages)
 

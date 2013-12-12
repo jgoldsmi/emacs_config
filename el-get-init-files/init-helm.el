@@ -9,7 +9,7 @@
 (require 'helm)
 (helm-mode 1)
 
-(define-key evil-normal-state-map ",b" 'helm-buffers-list)
-(define-key evil-normal-state-map ",x" 'helm-M-x)
-(define-key evil-normal-state-map ",f" 'helm-for-files)
-(define-key evil-normal-state-map ",p" 'helm-show-kill-ring)
+;; (define-key evil-normal-state-map ",b" 'helm-buffers-list)
+;; (define-key evil-normal-state-map ",x" 'helm-M-x)
+;; (define-key evil-normal-state-map ",f" 'helm-for-files)
+;; (define-key evil-normal-state-map ",p" 'helm-show-kill-ring)
