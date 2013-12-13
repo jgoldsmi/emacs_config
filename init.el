@@ -94,7 +94,6 @@
 	helm
 	go-mode
 	puppet-mode
-	flymake-puppet
 	js2-mode
 	magit
 	markdown-mode
