@@ -85,6 +85,7 @@
 	helm
 	go-mode
 	puppet-mode
+	js2-mode
 	magit
 	markdown-mode
 	org-mode
