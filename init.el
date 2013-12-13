@@ -90,6 +90,7 @@
 
 (setq my-packages
       '(auto-complete
+	flycheck
 	jedi
 	helm
 	go-mode
