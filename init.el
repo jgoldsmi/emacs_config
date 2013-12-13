@@ -69,9 +69,6 @@
 ;; Keybindings
 (setq jedi:setup-keys t)
 
-;; Use cperl-mode instead of perl-mode
-(defalias 'perl-mode 'cperl-mode)
-
 ;; el-get setup
 (add-to-list 'load-path "~/.emacs.d/el-get/el-get")
 (setq el-get-user-package-directory "~/.emacs.d/el-get-init-files")
@@ -96,6 +93,10 @@
 	go-mode
 	puppet-mode
 	js2-mode
+	cperl-mode
+	anything
+	anything-match-plugin
+	perl-completion
 	magit
 	markdown-mode
 	rainbow-delimiters
