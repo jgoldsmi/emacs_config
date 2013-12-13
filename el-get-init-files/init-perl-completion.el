@@ -1,10 +1,8 @@
-(setq plcmp-use-keymap nil)
 (add-hook 'cperl-mode-hook
 	  (lambda()
 	    (require 'perl-completion)
+	    (define-key plcmp-mode-map (kbd "C-c C-c m") 'plcmp-cmd-smart-complete)
 	    (perl-completion-mode t)))
-
-
 
 (add-hook  'cperl-mode-hook
 	   (lambda ()
