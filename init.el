@@ -1,6 +1,6 @@
 ;; init.el
-(load-file "compat.el")
-(load-file "keybindings.el")
+(load-file "~/.emacs.d/compat.el")
+(load-file "~/.emacs.d/keybindings.el")
 ;; Basic config
 (when (not (eq window-system 'ns))
   (menu-bar-mode -1))
