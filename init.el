@@ -1,4 +1,5 @@
 ;; init.el
+(load-file "compat.el")
 ;; Basic config
 (when (not (eq window-system 'ns))
   (menu-bar-mode -1))
