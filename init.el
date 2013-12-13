@@ -11,11 +11,17 @@
 (setq-default fill-column 80)
 (setq-default show-trailing-whitespace t)
 (column-number-mode 1)
-(define-key global-map (kbd "RET") 'newline-and-indent)
+(show-paren-mode 1)
 (when window-system (global-linum-mode))
 (defalias 'yes-or-no-p 'y-or-n-p)
 (defalias 'list-buffers 'ibuffer)
+
+;; Keybindings
+(define-key global-map (kbd "RET") 'newline-and-indent)
 (global-set-key (kbd "C-z") 'scroll-down-command)
+(global-set-key "\C-w" 'backward-kill-word)
+(global-set-key "\C-x\C-k" 'kill-region)
+(global-set-key "\C-c\C-k" 'kill-region)
 
 ;; Remember place in files
 (setq save-place-file "~/.emacs.d/saveplace")
