@@ -67,9 +67,6 @@
 (add-to-list 'auto-mode-alist '("\\.rest$" . rst-mode))
 (add-to-list 'auto-mode-alist '("\\.txt$" . rst-mode))
 
-;; Keybindings
-(setq jedi:setup-keys t)
-
 ;; el-get setup
 (add-to-list 'load-path "~/.emacs.d/el-get/el-get")
 (setq el-get-user-package-directory "~/.emacs.d/el-get-init-files")
