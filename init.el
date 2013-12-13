@@ -98,7 +98,6 @@
 	js2-mode
 	magit
 	markdown-mode
-	org-mode
 	rainbow-delimiters
 	theme-changer
 	solarized-theme
