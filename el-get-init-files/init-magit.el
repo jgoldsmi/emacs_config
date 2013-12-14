@@ -1,2 +1,1 @@
-(require 'magit)
-;; (define-key evil-normal-state-map ",m" 'magit-status)
+(define-key global-map (kbd "C-c m") 'magit-status)
