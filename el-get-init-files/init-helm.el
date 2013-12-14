@@ -6,7 +6,6 @@
 	('darwin "mdfind -name %s %s")
 	(t "locate %s"))
       )
-(require 'helm)
 (helm-mode 1)
 
 ;; (define-key evil-normal-state-map ",b" 'helm-buffers-list)
