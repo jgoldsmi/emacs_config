@@ -76,6 +76,7 @@
 	go-mode
 	puppet-mode
 	js2-mode
+	tern
 	cperl-mode
 	anything
 	anything-match-plugin
