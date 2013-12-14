@@ -83,6 +83,7 @@
 	magit
 	markdown-mode
 	rainbow-delimiters
+	highlight-chars
 	theme-changer
 	solarized-theme
 	diminish))
