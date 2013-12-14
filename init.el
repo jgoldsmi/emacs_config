@@ -33,7 +33,6 @@
   version-control t)
 
 ;; recentf
-(require 'recentf)
 (recentf-mode 1)
 
 ;; Uniquify
