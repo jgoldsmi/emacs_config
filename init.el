@@ -53,11 +53,6 @@
 (add-hook 'python-mode-hook 'flyspell-prog-mode)
 (add-hook 'c-mode-common-hook 'flyspell-prog-mode)
 
-;; reST
-(add-to-list 'auto-mode-alist '("\\.rst$" . rst-mode))
-(add-to-list 'auto-mode-alist '("\\.rest$" . rst-mode))
-(add-to-list 'auto-mode-alist '("\\.txt$" . rst-mode))
-
 ;; el-get setup
 (add-to-list 'load-path "~/.emacs.d/el-get/el-get")
 (setq el-get-user-package-directory "~/.emacs.d/el-get-init-files")
