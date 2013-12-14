@@ -70,6 +70,7 @@
 
 (setq my-packages
       '(auto-complete
+	ace-jump-mode
 	flycheck
 	jedi
 	helm
