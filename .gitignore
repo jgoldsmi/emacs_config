@@ -6,3 +6,4 @@ autosaves/*
 backups/*
 el-get/*
 *.elc
+elpa/*
