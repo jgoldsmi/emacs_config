@@ -71,6 +71,7 @@
 (setq my-packages
       '(auto-complete
 	ace-jump-mode
+	git-gutter
 	flycheck
 	jedi
 	helm
