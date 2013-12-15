@@ -1,6 +1,9 @@
 ;; init.el
+
 (load-file "~/.emacs.d/compat.el")
 (load-file "~/.emacs.d/keybindings.el")
+(load-file "~/.emacs.d/backups.el")
+
 ;; Basic config
 (when (not (eq window-system 'ns))
   (menu-bar-mode -1))
@@ -22,15 +25,6 @@
 (setq save-place-file "~/.emacs.d/saveplace")
 (setq-default save-place t)
 (require 'saveplace)
-
-;; Backups
-(setq backup-directory-alist `(("." . "~/.emacs.d/backups")))
-(setq auto-save-file-name-transforms `((".*" "~/.emacs.d/autosaves/\\1" t)))
-(setq backup-by-copying t)
-(setq delete-old-versions t
-  kept-new-versions 6
-  kept-old-versions 2
-  version-control t)
 
 ;; recentf
 (recentf-mode 1)
