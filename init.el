@@ -5,7 +5,7 @@
 (when (not (eq window-system 'ns))
   (menu-bar-mode -1))
 (when (functionp 'tool-bar-mode) (tool-bar-mode 0))
-(setq indent-tabs-mode nil)
+(setq-default indent-tabs-mode nil)
 (setq inhibit-splash-screen t)
 (setq kill-whole-line t)
 (setq require-final-newline 'query)
