@@ -65,6 +65,7 @@
 
 (setq my-packages
       '(auto-complete
+        ack-and-a-half
 	ace-jump-mode
 	git-gutter
 	flycheck
