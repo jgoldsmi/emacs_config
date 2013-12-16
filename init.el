@@ -17,6 +17,7 @@
 (setq-default show-trailing-whitespace t)
 (column-number-mode 1)
 (show-paren-mode 1)
+(global-hl-line-mode 1)
 (when window-system (global-linum-mode))
 (defalias 'yes-or-no-p 'y-or-n-p)
 (defalias 'list-buffers 'ibuffer)
