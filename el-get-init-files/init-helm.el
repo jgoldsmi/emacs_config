@@ -7,3 +7,5 @@
 	(t "locate %s"))
       )
 (helm-mode 1)
+(global-set-key (kbd "C-x C-m") 'helm-M-x)
+(global-set-key (kbd "C-c C-m") 'helm-M-x)
