@@ -72,6 +72,7 @@
 	flycheck
 	jedi
 	helm
+        projectile
 	go-mode
 	puppet-mode
 	js2-mode
