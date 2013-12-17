@@ -1,8 +1,8 @@
 ;; init.el
-
-(load-file "~/.emacs.d/compat.el")
-(load-file "~/.emacs.d/keybindings.el")
-(load-file "~/.emacs.d/backups.el")
+(add-to-list 'load-path "~/.emacs.d")
+(require 'init-compat)
+(require 'init-keybindings)
+(require 'init-backups)
 
 ;; Basic config
 (when (not (eq window-system 'ns))
