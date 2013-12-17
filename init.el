@@ -67,6 +67,7 @@
       '(auto-complete
         ack-and-a-half
 	ace-jump-mode
+        anzu
 	git-gutter
 	flycheck
 	jedi
