@@ -7,3 +7,4 @@ backups/*
 el-get/*
 *.elc
 elpa/*
+projectile-bookmarks.eld
