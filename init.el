@@ -66,6 +66,7 @@
 (setq my-packages
       '(auto-complete
         ack-and-a-half
+        ag
 	ace-jump-mode
         anzu
 	git-gutter
