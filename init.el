@@ -92,6 +92,3 @@
 	diminish))
 
 (el-get 'sync my-packages)
-
-;; emacs server
-(server-start)
