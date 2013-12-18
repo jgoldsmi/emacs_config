@@ -69,6 +69,7 @@
         ag
 	ace-jump-mode
         anzu
+        dired+
 	git-gutter
 	flycheck
 	jedi
