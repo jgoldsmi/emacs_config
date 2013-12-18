@@ -9,6 +9,7 @@
 (global-set-key "\C-c\C-k" 'kill-region)
 (global-set-key "\M-<" 'beginning-of-buffer)
 (global-set-key "\M->" 'end-of-buffer)
+(global-set-key "\C-x\\" 'align-regexp)
 
 (provide 'init-keybindings)
 ;;; init-keybindings ends here
