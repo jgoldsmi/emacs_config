@@ -59,9 +59,14 @@
     (eval-print-last-sexp)))
 
 (setq el-get-sources
-      '((:name theme-changer
+      '(
+        (:name theme-changer
 	       :type github
-	       :pkgname "hadronzoo/theme-changer")))
+	       :pkgname "hadronzoo/theme-changer")
+        (:name moe-theme
+               :type github
+               :pkgname "kuanyui/moe-theme.el")
+        ))
 
 (setq my-packages
       '(auto-complete
@@ -75,6 +80,7 @@
 	jedi
 	helm
         projectile
+        moe-theme
 	go-mode
 	puppet-mode
 	js2-mode
@@ -85,10 +91,10 @@
 	perl-completion
 	magit
 	markdown-mode
+        rainbow-mode
 	rainbow-delimiters
 	highlight-chars
 	theme-changer
-	solarized-theme
 	diminish))
 
 (el-get 'sync my-packages)
