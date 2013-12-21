@@ -1,4 +1,6 @@
-;; init.el
+;;; init.el --- Emacs init stuff
+;;; Commentary:
+;;; Code:
 (add-to-list 'load-path "~/.emacs.d")
 (require 'init-compat)
 (require 'init-el-get)
@@ -40,7 +42,7 @@
 
 ;; Flyspell
 (defun turn-on-flyspell ()
-   "Force flyspell-mode on using a positive arg.  For use in hooks."
+   "Force `flyspell-mode' on using a positive arg.  For use in hooks."
    (interactive)
    (flyspell-mode 1))
 (add-hook 'message-mode-hook 'turn-on-flyspell)
@@ -48,3 +50,5 @@
 (add-hook 'python-mode-hook 'flyspell-prog-mode)
 (add-hook 'c-mode-common-hook 'flyspell-prog-mode)
 
+(provide 'init)
+;;; init.el ends here
