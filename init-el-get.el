@@ -46,8 +46,8 @@
 	markdown-mode
         rainbow-mode
 	rainbow-delimiters
+        undo-tree
 	highlight-chars
-	theme-changer
 	diminish))
 
 (el-get 'sync my-packages)
