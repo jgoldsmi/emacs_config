@@ -29,6 +29,7 @@
         anzu
         dired+
 	git-gutter
+        god-mode
 	flycheck
 	jedi
 	helm
