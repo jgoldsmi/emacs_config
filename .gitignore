@@ -9,3 +9,4 @@ el-get/*
 elpa/*
 projectile-bookmarks.eld
 eshell/
+url/
