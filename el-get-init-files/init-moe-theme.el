@@ -2,5 +2,5 @@
 (setq calendar-latitude 40.7591)
 (setq calendar-longitude -73.9844)
 (add-to-list 'custom-theme-load-path "~/.emacs.d/el-get/moe-theme")
-(ignore-errors
-  (require 'moe-theme-switcher))
+(load-theme 'moe-dark t)
+
