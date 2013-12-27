@@ -48,7 +48,6 @@
         rainbow-mode
 	rainbow-delimiters
         undo-tree
-	highlight-chars
 	diminish))
 
 (el-get 'sync my-packages)
