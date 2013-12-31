@@ -9,3 +9,7 @@
 (helm-mode 1)
 (global-set-key (kbd "C-x C-m") 'helm-M-x)
 (global-set-key (kbd "C-c C-m") 'helm-M-x)
+(define-key global-map [remap find-file] 'helm-find-files)
+(define-key global-map [remap occur] 'helm-occur)
+(define-key global-map [remap list-buffers] 'helm-buffers-list)
+(define-key isearch-mode-map [remap isearch-occur] 'helm-occur-from-isearch)
