@@ -47,6 +47,7 @@
 	markdown-mode
         rainbow-mode
 	rainbow-delimiters
+        smart-mode-line
         undo-tree
 	diminish))
 
