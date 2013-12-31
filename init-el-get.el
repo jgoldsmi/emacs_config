@@ -48,8 +48,7 @@
         rainbow-mode
 	rainbow-delimiters
         smart-mode-line
-        undo-tree
-	diminish))
+        undo-tree))
 
 (el-get 'sync my-packages)
 
