@@ -40,6 +40,7 @@
         projectile
         moe-theme
 	go-mode
+        lua-mode
 	puppet-mode
 	js2-mode
 	tern
