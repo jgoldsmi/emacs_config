@@ -19,10 +19,14 @@
         (:name moe-theme
                :type github
                :pkgname "kuanyui/moe-theme.el")
+	(:name smart-mode-line
+	       :type github
+	       :pkgname "Bruce-Connor/smart-mode-line")
         ))
 
 (setq my-packages
-      '(auto-complete
+      '(dash
+	auto-complete
         ack-and-a-half
         ag
 	ace-jump-mode
