@@ -42,7 +42,7 @@
 
 ;; Flyspell
 (defun turn-on-flyspell ()
-   "Force `flyspell-mode' on using a positive arg.  For use in hooks."
+   "Force command `flyspell-mode' on using a positive arg.  For use in hooks."
    (interactive)
    (flyspell-mode 1))
 (add-hook 'message-mode-hook 'turn-on-flyspell)
