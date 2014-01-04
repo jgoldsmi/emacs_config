@@ -31,6 +31,7 @@
         ag
 	ace-jump-mode
         anzu
+        deft
         dired+
 	git-gutter
         god-mode
