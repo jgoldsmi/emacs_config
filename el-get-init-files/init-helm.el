@@ -12,4 +12,5 @@
 (define-key global-map [remap find-file] 'helm-find-files)
 (define-key global-map [remap occur] 'helm-occur)
 (define-key global-map [remap list-buffers] 'helm-buffers-list)
+(define-key global-map [remap yank-pop] 'helm-show-kill-ring)
 (define-key isearch-mode-map [remap isearch-occur] 'helm-occur-from-isearch)
