@@ -46,10 +46,6 @@
 	puppet-mode
 	js2-mode
 	tern
-	cperl-mode
-	anything
-	anything-match-plugin
-	perl-completion
 	magit
 	markdown-mode
 	rainbow-delimiters
