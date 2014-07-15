@@ -3,7 +3,6 @@
 
 ;;; Code:
 (global-set-key (kbd "RET") 'newline-and-indent)
-(global-set-key (kbd "C-z") 'scroll-down-command)
 (global-set-key "\C-w" 'backward-kill-word)  ;; From effective emacs
 (global-set-key "\C-x\C-k" 'kill-region)
 (global-set-key "\C-c\C-k" 'kill-region)
