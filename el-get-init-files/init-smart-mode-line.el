@@ -1,4 +1,4 @@
-(setq sml/theme 'respectful)
+(setq sml/theme 'dark)
 (require 'smart-mode-line)
 (sml/setup)
 (add-to-list 'sml/hidden-modes " Helm")
