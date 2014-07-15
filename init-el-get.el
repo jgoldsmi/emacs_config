@@ -34,7 +34,8 @@
         deft
         dired+
 	git-gutter
-        god-mode
+        evil
+        evil-surround
 	flycheck
 	jedi
 	helm
