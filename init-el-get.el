@@ -52,7 +52,6 @@
 	perl-completion
 	magit
 	markdown-mode
-        rainbow-mode
 	rainbow-delimiters
         smart-mode-line
         undo-tree))
