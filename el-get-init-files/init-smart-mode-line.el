@@ -1,4 +1,5 @@
 (setq sml/theme 'dark)
+(setq sml/no-confirm-load-theme 1)
 (require 'smart-mode-line)
 (sml/setup)
 (add-to-list 'sml/hidden-modes " Helm")
