@@ -10,3 +10,5 @@ elpa/*
 projectile-bookmarks.eld
 eshell/
 url/
+projectile.cache
+.python-environments/
