@@ -50,6 +50,7 @@
 	markdown-mode
 	rainbow-delimiters
         smart-mode-line
+        web-mode
         undo-tree))
 
 (el-get 'sync my-packages)
