@@ -35,6 +35,7 @@
         dired+
 	git-gutter
         evil
+        evil-nerd-commenter
         evil-surround
 	flycheck
 	jedi
