@@ -21,9 +21,12 @@
 (column-number-mode 1)
 (show-paren-mode 1)
 (global-hl-line-mode 1)
-(when window-system (global-linum-mode))
 (defalias 'yes-or-no-p 'y-or-n-p)
 (defalias 'list-buffers 'ibuffer)
+
+;; Linum mode
+(setq linum-format 'dynamic)
+(global-linum-mode t)
 
 ;; Remember place in files
 (setq save-place-file "~/.emacs.d/saveplace")
