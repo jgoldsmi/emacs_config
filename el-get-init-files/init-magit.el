@@ -1,1 +1,1 @@
-(define-key global-map (kbd "C-c m") 'magit-status)
+(evil-leader/set-key "m" 'magit-status)

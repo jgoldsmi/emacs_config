@@ -26,6 +26,10 @@
 
 (setq my-packages
       '(dash
+        evil-leader
+        evil
+        evil-nerd-commenter
+        evil-surround
 	auto-complete
         ack-and-a-half
         ag
@@ -34,9 +38,6 @@
         deft
         dired+
 	git-gutter
-        evil
-        evil-nerd-commenter
-        evil-surround
 	flycheck
 	jedi
 	helm
