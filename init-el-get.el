@@ -13,9 +13,6 @@
 
 (setq el-get-sources
       '(
-        (:name theme-changer
-	       :type github
-	       :pkgname "hadronzoo/theme-changer")
         (:name moe-theme
                :type github
                :pkgname "kuanyui/moe-theme.el")
