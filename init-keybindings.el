@@ -6,6 +6,7 @@
 (global-set-key "\C-x\C-k" 'kill-region)
 (global-set-key "\C-c\C-k" 'kill-region)
 (global-set-key "\C-x\\" 'align-regexp)
+(global-set-key "\C-z" 'scroll-down-command)
 
 (provide 'init-keybindings)
 ;;; init-keybindings ends here
