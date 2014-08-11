@@ -9,3 +9,10 @@
 (add-to-list 'auto-mode-alist '("\\.html\\'" . web-mode))
 
 (setq web-mode-enable-css-colorization t)
+
+(setq web-mode-markup-indent-offset 4)
+(setq web-mode-css-indent-offset 4)
+(setq web-mode-code-indent-offset 4)
+(setq web-mode-style-padding 4)
+(setq web-mode-script-padding 4)
+(setq web-mode-block-padding 4)
