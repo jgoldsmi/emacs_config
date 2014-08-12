@@ -41,6 +41,7 @@
 	helm
         helm-git-grep
         projectile
+        multiple-cursors
         moe-theme
 	go-mode
         lua-mode
