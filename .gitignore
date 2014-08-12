@@ -8,6 +8,7 @@ el-get/*
 *.elc
 elpa/*
 projectile-bookmarks.eld
+tramp
 eshell/
 url/
 projectile.cache
