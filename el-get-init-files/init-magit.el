@@ -1,1 +1,1 @@
-(evil-leader/set-key "m" 'magit-status)
+(global-set-key (kbd "C-c m") 'magit-status)

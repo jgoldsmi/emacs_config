@@ -27,10 +27,6 @@
 
 (setq my-packages
       '(dash
-        evil-leader
-        evil
-        evil-nerd-commenter
-        evil-surround
 	auto-complete
         ack-and-a-half
         ag

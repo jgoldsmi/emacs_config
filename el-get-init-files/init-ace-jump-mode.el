@@ -1,1 +1,1 @@
-(evil-leader/set-key "<SPC>" 'ace-jump-word-mode)
+(define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
