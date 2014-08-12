@@ -34,10 +34,12 @@
         anzu
         deft
         dired+
+        expand-region
 	git-gutter
 	flycheck
 	jedi
 	helm
+        helm-git-grep
         projectile
         moe-theme
 	go-mode
