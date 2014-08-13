@@ -3,6 +3,7 @@
 
 ;;; Code:
 (global-set-key (kbd "RET") 'newline-and-indent)
+(global-set-key (kbd "C-w") 'backward-kill-word)
 (global-set-key "\C-x\C-k" 'kill-region)
 (global-set-key "\C-c\C-k" 'kill-region)
 (global-set-key "\C-x\\" 'align-regexp)
