@@ -7,3 +7,4 @@
 (add-to-list 'sml/hidden-modes " Anzu")
 (add-to-list 'sml/hidden-modes " AC")
 (add-to-list 'sml/hidden-modes " GitGutter")
+(add-to-list 'sml/hidden-modes " MRev")
