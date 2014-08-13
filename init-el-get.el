@@ -20,37 +20,38 @@
         (:name moe-theme
                :type github
                :pkgname "kuanyui/moe-theme.el")
-	(:name smart-mode-line
-	       :type github
-	       :pkgname "Bruce-Connor/smart-mode-line")
+        (:name smart-mode-line
+               :type github
+               :pkgname "Bruce-Connor/smart-mode-line")
         ))
 
 (setq my-packages
       '(dash
-	auto-complete
+        auto-complete
         ack-and-a-half
         ag
-	ace-jump-mode
+        ace-jump-mode
         anzu
         deft
         dired+
         expand-region
-	git-gutter
-	flycheck
-	jedi
-	helm
+        git-gutter
+        flycheck
+        jedi
+        virtualenvwrapper
+        helm
         helm-git-grep
         projectile
         multiple-cursors
         moe-theme
-	go-mode
+        go-mode
         lua-mode
-	puppet-mode
-	js2-mode
-	tern
-	magit
-	markdown-mode
-	rainbow-delimiters
+        puppet-mode
+        js2-mode
+        tern
+        magit
+        markdown-mode
+        rainbow-delimiters
         smart-mode-line
         web-mode
         undo-tree))
