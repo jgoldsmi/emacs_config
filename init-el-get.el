@@ -44,7 +44,8 @@
         rainbow-delimiters
         smart-mode-line
         web-mode
-        undo-tree))
+        undo-tree
+        yaml-mode))
 
 (el-get 'sync my-packages)
 
