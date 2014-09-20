@@ -15,16 +15,6 @@
 (unless (file-directory-p el-get-recipe-path-elpa)
   (el-get-elpa-build-local-recipes))
 
-(setq el-get-sources
-      '(
-        (:name moe-theme
-               :type github
-               :pkgname "kuanyui/moe-theme.el")
-        (:name smart-mode-line
-               :type github
-               :pkgname "Bruce-Connor/smart-mode-line")
-        ))
-
 (setq my-packages
       '(dash
         auto-complete
