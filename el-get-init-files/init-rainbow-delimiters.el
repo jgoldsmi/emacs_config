@@ -1,1 +1,1 @@
-(global-rainbow-delimiters-mode 1)
+(add-hook 'prog-mode-hook #'rainbow-delimiters-mode)

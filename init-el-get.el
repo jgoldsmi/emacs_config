@@ -42,6 +42,7 @@
         magit
         markdown-mode
         rainbow-delimiters
+        rich-minority
         smart-mode-line
         web-mode
         undo-tree
