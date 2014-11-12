@@ -13,3 +13,4 @@ eshell/
 url/
 projectile.cache
 .python-environments/
+.cask/
