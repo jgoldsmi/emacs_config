@@ -69,7 +69,6 @@
         (puppet-mode . "melpa-stable")
         (racket-mode . "melpa-stable")
         (rainbow-delimiters . "melpa-stable")
-        (rainbow-mode . "melpa-stable")
         (ron-mode . "melpa-stable")
         (rust-ts-mode . "melpa-stable")
         (sass-mode . "melpa-stable")
