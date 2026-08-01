@@ -34,3 +34,5 @@ var/
 .lsp-session*
 gotools/
 eln-cache/
+tree-sitter/
+agent/
