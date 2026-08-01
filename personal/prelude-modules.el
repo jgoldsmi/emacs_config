@@ -48,7 +48,7 @@
 ;; (require 'prelude-helm-everywhere) ;; Enable Helm everywhere
 (require 'prelude-company)
 ;; (require 'prelude-corfu) ;; Lightweight modern alternative to Company (mutually exclusive with prelude-company)
-;; (require 'prelude-apheleia) ;; Async, unified format-on-save
+(require 'prelude-apheleia) ;; Async, unified format-on-save
 ;; (require 'prelude-key-chord) ;; Binds useful features to key combinations
 ;; (require 'prelude-eglot-booster) ;; Speeds up Eglot via emacs-lsp-booster (requires the binary)
 
