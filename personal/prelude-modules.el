@@ -103,7 +103,7 @@
 ;;; Misc
 ;; (require 'prelude-ai) ;; LLM-backed chat via gptel
 ;; (require 'prelude-erc) ;; A popular Emacs IRC client
-;; (require 'prelude-forge) ;; GitHub/GitLab/Gitea PRs and issues via Magit
+(require 'prelude-forge) ;; GitHub/GitLab/Gitea PRs and issues via Magit
 ;; (require 'prelude-mistty) ;; MisTTY terminal (pure elisp, no native module; rebinds C-c t)
 
 (provide 'prelude-modules)
