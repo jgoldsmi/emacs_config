@@ -1,0 +1,14 @@
+.gitignore
+  h_c8531ca341f359 39-41
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "446f8e39da40464f330905fe2e0a78cb61f0cd5e",
+  "prompts": {},
+  "humans": {
+    "h_c8531ca341f359": {
+      "author": "Jonathon Goldsmith <jonathon.goldsmith@gmail.com>"
+    }
+  }
+}
