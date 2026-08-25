@@ -36,3 +36,6 @@ gotools/
 eln-cache/
 tree-sitter/
 agent/
+.org-id-locations
+forge-database.sqlite
+org-roam.db
