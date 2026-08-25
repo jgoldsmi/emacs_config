@@ -1,0 +1,14 @@
+personal/prelude-modules.el
+  h_c8531ca341f359 106
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.23",
+  "base_commit_sha": "861c310e387e0aeeb95f6280d8b9c6d5df8a1fa3",
+  "prompts": {},
+  "humans": {
+    "h_c8531ca341f359": {
+      "author": "Jonathon Goldsmith <jonathon.goldsmith@gmail.com>"
+    }
+  }
+}
