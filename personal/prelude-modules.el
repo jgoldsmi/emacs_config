@@ -1,4 +1,4 @@
-;;; prelude-modules.el --- A listing of modules to load on startup
+;;; prelude-modules.el --- A listing of modules to load on startup  -*- lexical-binding: t; -*-
 ;;
 ;; Copyright © 2011-2026 Bozhidar Batsov
 ;;
@@ -68,7 +68,7 @@
 ;; are enabled by default.
 
 (require 'prelude-c)
-;; (require 'prelude-clojure)
+(require 'prelude-clojure)
 ;; (require 'prelude-common-lisp)
 (require 'prelude-css)
 ;; (require 'prelude-dart)
@@ -91,7 +91,7 @@
 ;; (require 'prelude-ruby)
 ;; (require 'prelude-rust)
 ;; (require 'prelude-scala)
-;; (require 'prelude-scheme)
+(require 'prelude-scheme)
 (require 'prelude-shell)
 ;; (require 'prelude-scss)
 ;; (require 'prelude-swift)
