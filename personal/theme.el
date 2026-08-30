@@ -1,7 +1,6 @@
 ;; -*- lexical-binding: t; -*-
 ;; TODO: switch to lambda themes
-;; (use-package nano-theme
-;;  :ensure t)
+
 (use-package lambda-themes
   :vc (:url "https://codeberg.org/Lambda-Emacs/lambda-themes"
             :rev :newest)
