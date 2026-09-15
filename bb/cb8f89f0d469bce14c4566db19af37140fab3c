@@ -1,0 +1,14 @@
+personal/theme.el
+  h_c8531ca341f359 15-20
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "bbcb8f89f0d469bce14c4566db19af37140fab3c",
+  "prompts": {},
+  "humans": {
+    "h_c8531ca341f359": {
+      "author": "Jonathon Goldsmith <jonathon.goldsmith@gmail.com>"
+    }
+  }
+}
