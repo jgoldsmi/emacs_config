@@ -1,3 +1,4 @@
+;; -*- lexical-binding: t; -*-
 (use-package agent-shell
   :ensure t
   :bind (("C-c a" . agent-shell)
