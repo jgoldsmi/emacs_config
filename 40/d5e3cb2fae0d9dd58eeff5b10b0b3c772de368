@@ -1,0 +1,14 @@
+personal/org.el
+  h_c8531ca341f359 10-14,26-63,84-85
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "40d5e3cb2fae0d9dd58eeff5b10b0b3c772de368",
+  "prompts": {},
+  "humans": {
+    "h_c8531ca341f359": {
+      "author": "Jonathon Goldsmith <jonathon.goldsmith@gmail.com>"
+    }
+  }
+}
