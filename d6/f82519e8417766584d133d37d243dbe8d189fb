@@ -1,0 +1,18 @@
+personal/ai.el
+  h_c8531ca341f359 1
+personal/preload/01-theme.el
+  h_c8531ca341f359 1
+prelude-pinned-packages.el
+  h_c8531ca341f359 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "d6f82519e8417766584d133d37d243dbe8d189fb",
+  "prompts": {},
+  "humans": {
+    "h_c8531ca341f359": {
+      "author": "Jonathon Goldsmith <jonathon.goldsmith@gmail.com>"
+    }
+  }
+}
