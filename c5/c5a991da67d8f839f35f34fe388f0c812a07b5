@@ -1,0 +1,14 @@
+personal/preload/00-vc.el
+  h_c8531ca341f359 1-23
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "c5c5a991da67d8f839f35f34fe388f0c812a07b5",
+  "prompts": {},
+  "humans": {
+    "h_c8531ca341f359": {
+      "author": "Jonathon Goldsmith <jonathon.goldsmith@gmail.com>"
+    }
+  }
+}
