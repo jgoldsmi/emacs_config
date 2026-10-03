@@ -34,7 +34,11 @@ var/
 .lsp-session*
 gotools/
 eln-cache/
+
+# tree-sitter grammars installed by treesit
 tree-sitter/
+
+# My stuff (for merging)
 agent/
 .org-id-locations
 forge-database.sqlite
