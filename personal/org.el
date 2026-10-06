@@ -10,7 +10,7 @@
    '((d "default" entry
         "* %?"
         :target (file+head "%<%Y-%m-%d>.org"
-                           "#+title: %<%Y-%m-%d>\n\n* Morning Setup\n\n* Notes\n\n* Conclusion\n\n* TODOs")))
+                           "#+title: %<%Y-%m-%d>\n\n*")))
    )
   (org-roam-db-autosync-mode)
   )
@@ -56,12 +56,6 @@
         ("PROJ" . +org-todo-project)
         ("NO"   . +org-todo-cancel)
         ("KILL" . +org-todo-cancel)))
-(setq org-roam-dailies-capture-templates
-      '((d "default" entry
-           "* %?"
-           :target (file+head "%<%Y-%m-%d>.org"
-                              "#+title: %<%Y-%m-%d>\n\n* Morning Setup\n\n* Notes\n\n* Conclusion\n\n* TODOs"))))
-
 
 (defun jg/paste-slack-rich-text ()
   "Paste HTML text from the macOS clipboard as formatted Org links."
