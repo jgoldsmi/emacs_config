@@ -15,6 +15,12 @@
   (org-roam-db-autosync-mode)
   )
 
+(use-package org-modern
+  :ensure t
+  :config
+  (global-org-modern-mode)
+  )
+
 (setq org-agenda-files '("~/org-roam/" "~/org-roam/daily/"))
 
 (defun jg/org-fill-setup ()
@@ -71,7 +77,6 @@
               (format "osascript -e 'the clipboard as \"HTML\"' | perl -ne 'print chr foreach unpack(\"C*\", pack(\"H*\", substr($_,11,-3)))' | pandoc -f html -t org"))))
         (insert converted-text)))))
 
-(global-set-key (kbd "C-c x a") 'org-agenda)
 (global-set-key (kbd "C-c x f") 'org-roam-node-find)
 (global-set-key (kbd "C-c x i") 'org-roam-node-insert)
 (global-set-key (kbd "C-c x t") 'org-roam-dailies-goto-today)
