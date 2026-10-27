@@ -77,7 +77,7 @@
 ;; (require 'prelude-elixir)
 ;; (require 'prelude-fsharp)
 ;; (require 'prelude-go)
-;; (require 'prelude-haskell)
+(require 'prelude-haskell)
 (require 'prelude-js)
 ;; (require 'prelude-latex)
 (require 'prelude-lisp) ;; Common setup for Lisp-like languages
