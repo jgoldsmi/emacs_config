@@ -1,15 +1,12 @@
 ;; -*- lexical-binding: t; -*-
-;; TODO: switch to lambda themes
 
 (use-package lambda-themes
-  :vc (:url "https://codeberg.org/Lambda-Emacs/lambda-themes"
-            :rev :newest)
-  :config
-  (setopt
-   lambda-themes-set-italic-comments t
-   lambda-themes-set-italic-keywords t
-   lambda-themes-set-variable-pitch t
-   )
+  :ensure t
+  :vc (:url "https://codeberg.org/Lambda-Emacs/lambda-themes.git" :rev :newest)
+  :custom
+  (lambda-themes-set-italic-comments t)
+  (lambda-themes-set-italic-keyword t)
+  (lambda-themes-set-variable-pitch t)
   )
 
 ;; TODO: add blackout or some better diminishing
@@ -26,6 +23,7 @@
         calendar-longitude -73.9352)
   (setq circadian-themes '((:sunrise . lambda-light)
                            (:sunset  . lambda-dark)))
+  (add-hook 'circadian-before-load-theme-hook #'(lambda (theme) (lambda-themes--disable-all-themes)))
   (circadian-setup))
 
 (set-frame-font "RobotoMono Nerd Font" nil t)
